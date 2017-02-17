@@ -12,6 +12,14 @@ public class Product {
 	private String description;
 	private String imageUrl;
 	private double price;
+	
+	
+	public Product(String name, String title, String description) {
+		this.name = name;
+		this.title = title;
+		this.description = description;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -43,6 +51,9 @@ public class Product {
 		this.price = price;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Name : "+this.name+" Title : "+this.title+" Description : "+this.description;
+	}
 	
 }
